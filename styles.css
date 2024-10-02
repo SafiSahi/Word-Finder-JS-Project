@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+    color: red;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('background.jpg'); /* Add a background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.7);
+}
+
+#game-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#word-grid {
+    display: grid;
+    grid-template-columns: repeat(15, 40px); /* Increased grid size */
+    gap: 5px;
+    border: 2px solid red;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+#word-grid div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+#word-grid div:hover {
+    background-color: rgba(255, 0, 0, 0.3); /* Highlight on hover */
+}
+
+#word-list {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.word-found {
+    text-decoration: line-through; /* Cross out the found word */
+    color: gray; /* Change color of crossed out words */
+}
+
